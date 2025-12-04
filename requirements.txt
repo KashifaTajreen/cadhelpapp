@@ -4,3 +4,4 @@ streamlit
 shapely
 matplotlib
 SpeechRecognition
+flask
