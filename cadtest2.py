@@ -643,7 +643,7 @@ st.sidebar.header("Input & Options")
 q_text = st.sidebar.text_area("Type question here (example):\nLine AB 80 mm long inclined 30 deg to HP and 45 deg to VP\nPoint A 30 mm infront of VP and 20 mm above HP\nTriangular lamina side 40 mm surface 60 deg to HP", height=200)
 uploaded_file = st.sidebar.file_uploader("Upload photo of question (optional)", type=['png','jpg','jpeg'])
 st.sidebar.markdown("Voice input helper (use Chrome):")
-st.sidebar.components.v1.html(VOICE_HTML, height=170)
+#st.sidebar.components.v1.html(VOICE_HTML, height=170)
 
 force_type = st.sidebar.selectbox("Force question type (optional)", ["Auto","Point","Line","Lamina","Prism","Pyramid","Cylinder","Cone","Cube/Cuboid","Develop"])
 st.sidebar.markdown("---")
@@ -787,4 +787,5 @@ if generate_btn:
 # Footer help
 st.markdown("---")
 st.markdown("Notes:\n- If you see errors about cv2: this app does not use cv2. `cv2` is OpenCV (use `pip install opencv-python` if you need it). I intentionally avoided cv2 so deployment on Streamlit Cloud is simpler.\n- Voice helper requires Chrome browser (desktop or Android). Record and copy-paste transcript into the question box for best results.\n- For fully automatic OCR of uploaded photos, I can add `pytesseract` support, but that requires installing the Tesseract engine on the server (I can provide instructions or code).")
+
 
