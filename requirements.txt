@@ -1,0 +1,6 @@
+numpy
+pillow
+streamlit
+shapely
+matplotlib
+SpeechRecognition
